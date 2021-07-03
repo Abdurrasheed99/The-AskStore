@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import './apptext.dart';
+import '../apptext.dart';
 
 class HomePage extends StatefulWidget {
   @override
@@ -7,7 +7,7 @@ class HomePage extends StatefulWidget {
 }
 
 class _HomePageState extends State<HomePage> {
-  var fontsize = 10.0;
+  var fontsize = 20.0;
 
   @override
   Widget build(BuildContext context) {
@@ -19,7 +19,7 @@ class _HomePageState extends State<HomePage> {
               Icons.lightbulb_outline_sharp,
               color: Colors.black,
             ),
-            Center(child: AppText("App_Name", fontsize)),
+            Center(child: AppText("App Name", fontsize)),
           ],
         ),
       ),
