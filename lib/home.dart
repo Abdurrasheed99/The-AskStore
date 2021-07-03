@@ -13,9 +13,14 @@ class _HomePageState extends State<HomePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Icon(
-          Icons.lightbulb_outline_sharp,
-          color: Colors.black,
+        title: Row(
+          children: [
+            Icon(
+              Icons.lightbulb_outline_sharp,
+              color: Colors.black,
+            ),
+            Center(child: AppText("App_Name", fontsize)),
+          ],
         ),
       ),
       body: Center(
@@ -43,6 +48,9 @@ class _HomePageState extends State<HomePage> {
             },
           ),
         ],
+      ),
+      drawer: Drawer(
+        child: Icon(Icons.lightbulb_outline_sharp),
       ),
     );
   }
